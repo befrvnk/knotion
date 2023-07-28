@@ -1,0 +1,43 @@
+{
+  "object": "block",
+  "id": "e273b826-3817-4942-a7b7-6f30497cfac5",
+  "parent": {
+    "type": "page_id",
+    "page_id": "442aa9eb-8508-45e5-a51a-92e6608d68f6"
+  },
+  "created_time": "2022-09-10T11:01:00.000Z",
+  "last_edited_time": "2022-10-07T18:53:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "63a1ed89-bd2d-48b8-93a5-58ba744c8360"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "63a1ed89-bd2d-48b8-93a5-58ba744c8360"
+  },
+  "has_children": false,
+  "archived": false,
+  "type": "paragraph",
+  "paragraph": {
+    "rich_text": [
+      {
+        "type": "text",
+        "text": {
+          "content": "Das ist Text",
+          "link": null
+        },
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "Das ist Text",
+        "href": null
+      }
+    ],
+    "color": "default"
+  }
+}

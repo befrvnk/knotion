@@ -1,0 +1,17 @@
+{
+  "type": "text",
+  "text": {
+    "content": "Das ist Text",
+    "link": null
+  },
+  "annotations": {
+    "bold": false,
+    "italic": false,
+    "strikethrough": false,
+    "underline": false,
+    "code": false,
+    "color": "default"
+  },
+  "plain_text": "Das ist Text",
+  "href": null
+}

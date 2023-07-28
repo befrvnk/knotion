@@ -1,0 +1,19 @@
+# Gradle
+.gradle
+build/
+
+# IntelliJ
+.idea
+*.iml
+class
+
+#Other
+.DS_Store
+.directory
+tmp
+*.swp
+*.tmp
+*.bak
+*.launch
+captures
+.java-version

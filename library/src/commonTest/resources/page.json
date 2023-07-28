@@ -1,0 +1,53 @@
+{
+  "object": "page",
+  "id": "4b718360-a8b1-4249-a52b-a8e6a8c4299c",
+  "created_time": "2023-05-25T17:07:00.000Z",
+  "last_edited_time": "2023-05-25T18:13:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "63a1ed89-bd2d-48b8-93a5-58ba744c8360"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "63a1ed89-bd2d-48b8-93a5-58ba744c8360"
+  },
+  "cover": {
+    "type": "file",
+    "file": {
+      "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d552dd67-55c4-493d-abb6-d31bd3cd7555/DSCF63462.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230602%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230602T215403Z&X-Amz-Expires=3600&X-Amz-Signature=6149be204ddcea5d803e9f2c4c1f8a0648c87d7e6a83c04cdb6a9e81176840ce&X-Amz-SignedHeaders=host&x-id=GetObject",
+      "expiry_time": "2023-06-02T22:54:03.165Z"
+    }
+  },
+  "icon": null,
+  "parent": {
+    "type": "workspace",
+    "workspace": true
+  },
+  "archived": false,
+  "properties": {
+    "title": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Title",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Title",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/Example-4b718360a8b14249a52ba8e6a8c4298c"
+}
