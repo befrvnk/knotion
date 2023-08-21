@@ -1,7 +1,5 @@
 package com.befrvnk.knotion.objects.user
 
-import com.befrvnk.knotion.objects.Email
-import com.befrvnk.knotion.objects.Id
 import com.befrvnk.knotion.objects.other.Owner
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
@@ -10,7 +8,7 @@ import kotlinx.serialization.json.JsonNames
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class User(
-    val id: Id,
+    val id: String,
     val type: String? = null,
     val name: String? = null,
     @JsonNames("avatar_url")
@@ -20,14 +18,14 @@ data class User(
 ) {
     @Serializable
     data class PersonDetails(
-        val email: Email
+        val email: String
     )
 
     @OptIn(ExperimentalSerializationApi::class)
     @Serializable
     data class BotDetails(
-        val owner: Owner,
+        val owner: Owner? = null,
         @JsonNames("workspace_name")
-        val workspaceName: String,
+        val workspaceName: String? = null,
     )
 }

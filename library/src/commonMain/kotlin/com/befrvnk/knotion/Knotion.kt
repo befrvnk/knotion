@@ -29,6 +29,7 @@ class Knotion(integrationToken: String) {
                     Json {
                         explicitNulls = false
                         ignoreUnknownKeys = true
+                        coerceInputValues = true
                     }
                 )
             }

@@ -1,0 +1,4 @@
+{
+  "error": "invalid_request",
+  "error_description": "body failed validation: body.redirect_uri should be defined, instead was `undefined`."
+}

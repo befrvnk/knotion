@@ -1,8 +1,5 @@
 package com.befrvnk.knotion.endpoints.blocks
 
-import com.befrvnk.knotion.endpoints.blocks.params.AppendBlockChildrenParams
-import com.befrvnk.knotion.endpoints.blocks.responses.AppendBlockChildrenResponse
-import com.befrvnk.knotion.endpoints.blocks.responses.RetrieveBlockChildrenResponse
 import com.befrvnk.knotion.objects.block.Block
 import de.jensklingenberg.ktorfit.Response
 import de.jensklingenberg.ktorfit.http.Body

@@ -1,8 +1,5 @@
 package com.befrvnk.knotion.endpoints.pages
 
-import com.befrvnk.knotion.endpoints.pages.params.CreatePageBody
-import com.befrvnk.knotion.endpoints.pages.params.UpdatePagePropertiesBody
-import com.befrvnk.knotion.objects.Id
 import com.befrvnk.knotion.objects.Page
 import com.befrvnk.knotion.objects.Property
 import de.jensklingenberg.ktorfit.Response
@@ -14,20 +11,20 @@ import de.jensklingenberg.ktorfit.http.Path
 
 interface PagesEndpoint {
     @POST("pages")
-    suspend fun createPage(@Body body: CreatePageBody): Response<Page>
+    suspend fun createPage(@Body body: CreatePageParams): Response<Page>
 
     @GET("pages/{page_id}")
     suspend fun retrievePage(@Path("page_id") pageId: String): Response<Page>
 
     @GET("pages/{page_id}/properties/{property_id}")
     suspend fun retrievePagePropertyItem(
-        @Path("page_id") pageId: Id,
+        @Path("page_id") pageId: String,
         @Path("property_id") propertyId: String,
     ): Response<Property>
 
     @PATCH("page/{page_id}")
     suspend fun updatePageProperties(
-        @Path("page_id") pageId: Id,
+        @Path("page_id") pageId: String,
         @Body body: UpdatePagePropertiesBody,
     ): Response<Page>
 }

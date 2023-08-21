@@ -1,9 +1,8 @@
 package com.befrvnk.knotion.objects.block
 
-import com.befrvnk.knotion.objects.Id
 import com.befrvnk.knotion.objects.other.Color
 import com.befrvnk.knotion.objects.other.Parent
-import com.befrvnk.knotion.objects.other.RichText
+import com.befrvnk.knotion.objects.richtext.RichText
 import com.befrvnk.knotion.objects.user.User
 import kotlinx.datetime.Instant
 import kotlinx.serialization.ExperimentalSerializationApi
@@ -15,7 +14,7 @@ import kotlinx.serialization.json.JsonNames
 @Serializable
 @SerialName("quote")
 data class Quote(
-    override val id: Id,
+    override val id: String,
     override val parent: Parent,
     @JsonNames("created_time")
     override val createdTime: Instant,

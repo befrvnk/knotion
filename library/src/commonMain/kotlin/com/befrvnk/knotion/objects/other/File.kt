@@ -1,5 +1,6 @@
 package com.befrvnk.knotion.objects.other
 
+import com.befrvnk.knotion.objects.richtext.RichText
 import kotlinx.datetime.Instant
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerialName

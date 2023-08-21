@@ -3,7 +3,7 @@ package com.befrvnk.knotion.objects
 import com.befrvnk.knotion.objects.other.File
 import com.befrvnk.knotion.objects.other.Icon
 import com.befrvnk.knotion.objects.other.Parent
-import com.befrvnk.knotion.objects.other.RichText
+import com.befrvnk.knotion.objects.richtext.RichText
 import com.befrvnk.knotion.objects.user.User
 import kotlinx.datetime.Instant
 import kotlinx.serialization.ExperimentalSerializationApi
@@ -13,7 +13,7 @@ import kotlinx.serialization.json.JsonNames
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class Page(
-    val id: Id,
+    val id: String,
     @JsonNames("created_time")
     val createdTime: Instant,
     @JsonNames("created_by")

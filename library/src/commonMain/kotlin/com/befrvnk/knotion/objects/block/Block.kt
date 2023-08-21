@@ -1,6 +1,5 @@
 package com.befrvnk.knotion.objects.block
 
-import com.befrvnk.knotion.objects.Id
 import com.befrvnk.knotion.objects.other.Parent
 import com.befrvnk.knotion.objects.user.User
 import kotlinx.datetime.Instant
@@ -11,7 +10,7 @@ import kotlinx.serialization.json.JsonNames
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 sealed class Block {
-    abstract val id: Id
+    abstract val id: String
     abstract val parent: Parent
     @JsonNames("created_time")
     abstract val createdTime: Instant

@@ -1,9 +1,8 @@
 package com.befrvnk.knotion.objects.block
 
-import com.befrvnk.knotion.objects.Id
 import com.befrvnk.knotion.objects.other.Color
 import com.befrvnk.knotion.objects.other.Parent
-import com.befrvnk.knotion.objects.other.RichText
+import com.befrvnk.knotion.objects.richtext.RichText
 import com.befrvnk.knotion.objects.user.User
 import kotlinx.datetime.Instant
 import kotlinx.serialization.ExperimentalSerializationApi
@@ -15,7 +14,7 @@ import kotlinx.serialization.json.JsonNames
 @Serializable
 @SerialName("heading_1")
 data class Heading1(
-    override val id: Id,
+    override val id: String,
     override val parent: Parent,
     @JsonNames("created_time")
     override val createdTime: Instant,
@@ -36,7 +35,7 @@ data class Heading1(
 @Serializable
 @SerialName("heading_2")
 data class Heading2(
-    override val id: Id,
+    override val id: String,
     override val parent: Parent,
     @JsonNames("created_time")
     override val createdTime: Instant,
@@ -49,7 +48,7 @@ data class Heading2(
     override val archived: Boolean,
     @JsonNames("has_children")
     override val hasChildren: Boolean,
-    @JsonNames("heading_1")
+    @JsonNames("heading_2")
     val heading: HeadingDetails,
 ) : Block()
 
@@ -57,7 +56,7 @@ data class Heading2(
 @Serializable
 @SerialName("heading_3")
 data class Heading3(
-    override val id: Id,
+    override val id: String,
     override val parent: Parent,
     @JsonNames("created_time")
     override val createdTime: Instant,
@@ -70,7 +69,7 @@ data class Heading3(
     override val archived: Boolean,
     @JsonNames("has_children")
     override val hasChildren: Boolean,
-    @JsonNames("heading_1")
+    @JsonNames("heading_3")
     val heading: HeadingDetails,
 ) : Block()
 
