@@ -2,7 +2,10 @@ package com.befrvnk.knotion
 
 import com.befrvnk.knotion.endpoints.authentication.AuthenticationEndpoint
 import com.befrvnk.knotion.endpoints.blocks.BlocksEndpoint
+import com.befrvnk.knotion.endpoints.comments.CommentsEndpoint
+import com.befrvnk.knotion.endpoints.databases.DatabasesEndpoint
 import com.befrvnk.knotion.endpoints.pages.PagesEndpoint
+import com.befrvnk.knotion.endpoints.search.SearchEndpoint
 import com.befrvnk.knotion.endpoints.users.UsersEndpoint
 import de.jensklingenberg.ktorfit.ktorfit
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -40,7 +43,13 @@ class Knotion(integrationToken: String) {
 
     val blocksEndpoint = ktorfit.create<BlocksEndpoint>()
 
+    val commentsEndpoint = ktorfit.create<CommentsEndpoint>()
+
+    val databasesEndpoint = ktorfit.create<DatabasesEndpoint>()
+
     val pagesEndpoint = ktorfit.create<PagesEndpoint>()
+
+    val searchEndpoint = ktorfit.create<SearchEndpoint>()
 
     val usersEndpoint = ktorfit.create<UsersEndpoint>()
 }
