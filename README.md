@@ -14,7 +14,7 @@ val pageId = "123456"
 knotion.pagesEndpoint.retrievePage(pageId)
 ```
 
-## Snapshot
+### Snapshot
 
 **settings.gradle.kts**
 ```kotlin
@@ -29,4 +29,55 @@ dependencyResolutionManagement {
 **build.gradle.kts**
 ```kotlin
 implementation("com.befrvnk:knotion-jvm:0.1.0-SNAPSHOT")
+```
+
+## API
+
+### Block Endpoint
+```kotlin
+knotion.authenticationEndpoint.createToken()
+knotion.blocksEndpoint.appendBlockChildren()
+knotion.blocksEndpoint.retrieveBlock()
+knotion.blocksEndpoint.retrieveBlockChildren()
+knotion.blocksEndpoint.updateBlock()
+knotion.blocksEndpoint.deleteBlock()
+```
+
+### Comments Endpoint
+
+```kotlin
+knotion.commentsEndpoint.createComment()
+knotion.commentsEndpoint.retrieveComments()
+```
+
+### Databases Endpoint
+
+```kotlin
+knotion.databasesEndpoint.createDatabase()
+knotion.databasesEndpoint.queryDatabasse()
+knotion.databasesEndpoint.retrieveDatabase()
+knotion.databasesEndpoint.updateDatabase()
+```
+
+### Pages Endpoint
+
+```kotlin
+knotion.pagesEndpoint.createPage()
+knotion.pagesEndpoint.retrievePage()
+knotion.pagesEndpoint.retrievePagePropertyItem()
+knotion.pagesEndpoint.updatePageProperties()
+```
+
+### Search Endpoint
+
+```kotlin
+knotion.searchEndpoint.searchByTitle()
+```
+
+### Users Endpoint
+
+```kotlin
+knotion.usersEndpoint.listAllUsers()
+knotion.usersEndpoint.retrieveUser()
+knotion.usersEndpoint.retrieveMyUser()
 ```
