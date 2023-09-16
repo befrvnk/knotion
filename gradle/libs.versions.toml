@@ -7,7 +7,7 @@ kotlinx-datetime = "0.4.1"
 ksp = "1.9.10-1.0.13"
 ktor = "2.3.4"
 ktorfit-gradle = "1.6.0"
-ktorfit = "1.6.0"
+ktorfit = "1.7.0"
 okio = "3.5.0"
 publish = "0.25.3"
 
