@@ -3,7 +3,7 @@ kotlin = "2.0.10"
 
 dokka = "1.9.20"
 kotest = "5.9.1"
-kotlinx-datetime = "0.6.0"
+kotlinx-datetime = "0.6.1"
 ksp = "2.0.10-1.0.24"
 ktor = "2.3.12"
 ktorfit-gradle = "2.0.1"
