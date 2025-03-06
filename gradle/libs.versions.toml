@@ -9,7 +9,7 @@ ktor = "3.1.1"
 ktorfit-gradle = "2.4.0"
 ktorfit = "2.3.0-1.0.30"
 okio = "3.10.2"
-publish = "0.30.0"
+publish = "0.31.0"
 
 [plugins]
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
